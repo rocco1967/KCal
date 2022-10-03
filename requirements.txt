@@ -1,5 +1,5 @@
 sklearn
 pickle5
 pandas
-streamlit==0.67.0
+streamlit
 Pillow
