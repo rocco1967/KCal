@@ -2,7 +2,7 @@
 
 
 """
-@author: Fascilla Gianfranco
+author: Fascilla Gianfranco
 """
 
 
