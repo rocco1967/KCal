@@ -1,2 +1,2 @@
 
-email........gianfranco.fa@gmail.com
+gianfranco.fa@gmail.com
