@@ -61,15 +61,15 @@ Body_Temp = st.number_input('Body_Temp:', min_value=35.0,max_value=41.0,value=35
 if st.button('Calcolo Calorie'):
     Calorie_Bruciate = predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp)
     st.success(f' calcolo Kcalorie ... +- 5% ..   {Calorie_Bruciate[0]:.2f} KCAL')
-    if Calorie_Bruciate<=300:
-       st.header('.........SFORZATI UN PO^ DI PIU^')
-       st.header('QUESTI LI VEDI SOLO a NATALE')
-       st.image(image3) 
-    elif Calorie_Bruciate<450:
-        st.header('........PUOI FARE DI MEGLIO')
-    else:
-        st.header('........OTTIMO LAVORO COMPLIMENTI')
-        st.header('PUOI PERMETTERTI QUESTI OGNI TANTO')
-        st.image(image3)
-st.image(image)    
+    #if Calorie_Bruciate<=300:
+       #st.header('.........SFORZATI UN PO^ DI PIU^')
+       #st.header('QUESTI LI VEDI SOLO a NATALE')
+       #st.image(image3) 
+    #elif Calorie_Bruciate<450:
+        #st.header('........PUOI FARE DI MEGLIO')
+    #else:
+        #st.header('........OTTIMO LAVORO COMPLIMENTI')
+        #st.header('PUOI PERMETTERTI QUESTI OGNI TANTO')
+        #st.image(image3)
+#st.image(image)    
 
