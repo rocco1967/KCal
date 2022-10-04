@@ -37,7 +37,7 @@ st.sidebar.info('questa app e^ stata creata per conoscere le calorie consumate d
 #st.header('Duration=durata esercizio fisico in minuti')
 #st.header('Body_Temp=temperatura corporea a fine esercizio')
 #st.header('Heart_Rate=battito cardiaco a fine esercizio')
-st.header('programma con rete neurale che calcola il consumo di Kcalorie dopo attivita^ fisica- addestrato su 15000 dati clinici')
+st.header('il calcolo viene eseguito con una rete neurale  addestrata su 15000 dati clinici')
 st.header('     Immetti i dati:')
 st.write('seleziona Sesso...   DONNA = 0 ... UOMO = 1')
 Gender = st.slider("SESSO: ", min_value=0,   
