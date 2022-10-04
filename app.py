@@ -56,6 +56,19 @@ st.write('inserisci battito cardiaco a fine esercizio')
 Heart_Rate = st.number_input('Heart_Rate:', min_value=50.0,max_value=230.0,value=50.0)
 st.write('inserisci temperatura corporea a fine esercizio se^ non puoi inserisci 37 ')         
 Body_Temp = st.number_input('Body_Temp:', min_value=35.0,max_value=41.0,value=35.0)
+st.markdown(
+    """
+    <style>
+    textarea {
+        font-size: 3rem !important;
+    }
+    input {
+        font-size: 3rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 if st.button('Calcolo Calorie'):
     Calorie_Bruciate = predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp)
