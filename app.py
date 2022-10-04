@@ -27,7 +27,7 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
 image = Image.open('dottore_small2.png')
 image2= Image.open('allenamento2.jpg')
 image3 = Image.open('pasticcini3.jpg')
-st.image(image2)
+#st.image(image2)
 #st.image(image)
 st.title('................Calcolo Calorie...............')
 #st.image("""https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NjUwNDYyNTYzNDExNTkx/why-dominion-diamonds-second-trip-to-the-block-may-be-different.png""")
