@@ -15,6 +15,7 @@ import pandas #as pd
 import pickle
 import streamlit as st
 from PIL import Image
+primaryColor="#F63366"
 model = pickle.load(open('streamlit.pk','rb'))
 @st.cache
 def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
