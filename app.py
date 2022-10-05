@@ -26,6 +26,8 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
 image = Image.open('dottore_small2.png')
 image2= Image.open('allenamento2.jpg')
 image3 = Image.open('pasticcini3.jpg')
+image4= Image.open('donna.jpg')
+image5 = Image.open('uomo.jpg')
 #st.image(image2)
 #st.image(image)
 st.header('..........Calcolo KCalorie consumate .........')
@@ -45,6 +47,10 @@ st.header('il calcolo viene eseguito con una rete neurale  addestrata su 15000 d
 st.subheader('seleziona Sesso...   DONNA = 0 ... UOMO = 1')
 Gender = st.slider("SESSO: ", min_value=0,   
                        max_value=1, value=1)
+if Gender==0:
+    st.image(image4)
+else:
+    st.image(image5)
 #Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 #Gender = st.multi_select("seleziona sesso",["0","1"])
 st.subheader('inserisci eta^')
