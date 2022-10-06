@@ -52,7 +52,7 @@ Gender = st.slider("SESSO: ", min_value=0,
 if Gender==0:
     st.subheader('hai selezionato DONNA')
 else:
-    st.suheader('hai selezionato UOMO')
+    st.subheader('hai selezionato UOMO')
 if Gender==0:
     st.image(image4)
 else:
