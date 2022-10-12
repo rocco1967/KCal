@@ -60,17 +60,17 @@ else:
 #Gender = st.number_input('Gender:', min_value=0.0, max_value=1.0,value=1.0)
 #Gender = st.multi_select("seleziona sesso",["0","1"])
 st.subheader('inserisci eta^')
-Age = st.number_input('Age:', min_value=12.0,max_value=80.0,value=12.0)
+Age = st.number_input('Age:', min_value=18.0,max_value=75.0,value=18.0)
 st.subheader('inserisci altezza in centimetri')
-Height = st.number_input('Height:', min_value=120.0,max_value=210.0,value=120.0)
+Height = st.number_input('Height:', min_value=125.0,max_value=210.0,value=125.0)
 st.write('inserisci peso in kg (reale please)')
-Weight = st.number_input('Weight:', min_value=35.0,max_value=160.0,value=35.0)
+Weight = st.number_input('Weight:', min_value=40.0,max_value=160.0,value=40.0)
 st.subheader('inserisci durata esercizio(corsa ecc ecc) in minuti')         
 Duration = st.number_input('Duration:', min_value=10.0, max_value=240.0, value=10.0)
 st.subheader('inserisci battito cardiaco a fine esercizio')         
-Heart_Rate = st.number_input('Heart_Rate:', min_value=50.0,max_value=230.0,value=50.0)
+Heart_Rate = st.number_input('Heart_Rate:', min_value=65.0,max_value=230.0,value=65.0)
 st.subheader('inserisci temperatura corporea a fine esercizio se^ non puoi inserisci 37 ')         
-Body_Temp = st.number_input('Body_Temp:', min_value=35.0,max_value=41.0,value=35.0)
+Body_Temp = st.number_input('Body_Temp:', min_value=36.0,max_value=41.0,value=36.0)
 st.markdown(
     """
     <style>
