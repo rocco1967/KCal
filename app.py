@@ -84,10 +84,12 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
+tolleranza=(Calorie_Bruciate*3)/100
 if st.button('Calcolo Calorie'):
     Calorie_Bruciate = predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp)
-    st.subheader(f' calcolo Kcalorie ... tolleranza... 5% ..   {Calorie_Bruciate[0]:.2f} KCAL')
+    #st.subheader(f' calcolo Kcalorie ... tolleranza... 5% ..   {Calorie_Bruciate[0]:.2f} KCAL')   #### originale ###
+    st.subheader(f' calcolo Kcalorie ... tolleranza... 5% ..   {Calorie_Bruciate[0]:.2f} KCAL.....tolleranza') 
+    st.header(f' calcolo Kcalorie....
     #if Calorie_Bruciate<=300:
        #st.header('.........SFORZATI UN PO^ DI PIU^')
        #st.header('QUESTI LI VEDI SOLO a NATALE')
