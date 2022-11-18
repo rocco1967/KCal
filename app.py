@@ -4,7 +4,7 @@
 """
 @author: Fascilla Gianfranco
 """
-st.set_page_config(page_title="CALORIEML")
+
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import ElasticNet
@@ -15,6 +15,7 @@ import pandas #as pd
 import pickle
 import streamlit as st
 from PIL import Image
+st.set_page_config(page_title="CALORIEML")
 #primaryColor="#F63366"
 #backgroundColor="#FFFFFF"
 model = pickle.load(open('streamlit.pk','rb'))
