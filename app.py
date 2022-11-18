@@ -4,7 +4,7 @@
 """
 @author: Fascilla Gianfranco
 """
-
+st.set_page_config(page_title="CALORIEML")
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import ElasticNet
