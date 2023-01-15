@@ -24,9 +24,9 @@ def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     prediction = model.predict(pandas.DataFrame([[Gender, Age, Height, Weight, Duration,Heart_Rate,Body_Temp]], columns=['Gender', 'Age', 'Height', 'Weight', 'Duration', 'Heart_Rate','Body_Temp']))
     prediction=abs(prediction)
     return prediction
-image = Image.open('dottore_small2.png')
+#image = Image.open('dottore_small2.png')
 image2= Image.open('allenamento2.jpg')
-image3 = Image.open('pasticcini3.jpg')
+#image3 = Image.open('pasticcini3.jpg')
 image4= Image.open('donna.JPG')
 image4=image4.resize((300,200))
 image5 = Image.open('uomo.JPG')
