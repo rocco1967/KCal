@@ -15,7 +15,7 @@ import pandas #as pd
 import pickle
 import streamlit as st
 from PIL import Image
-st.set_page_config(page_title="CALORIEML")
+st.set_page_config(page_title="AI_calories_calculator")
 #primaryColor="#F63366"
 #backgroundColor="#FFFFFF"
 model = pickle.load(open('streamlit.pk','rb'))
