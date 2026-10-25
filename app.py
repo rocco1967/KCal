@@ -19,7 +19,7 @@ st.set_page_config(page_title="AIcaloriesBURN")
 #primaryColor="#F63366"
 #backgroundColor="#FFFFFF"
 model = pickle.load(open('streamlit.pk','rb'))
-@st.cache
+@st.cache_data
 def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
     prediction = model.predict(pandas.DataFrame([[Gender, Age, Height, Weight, Duration,Heart_Rate,Body_Temp]], columns=['Gender', 'Age', 'Height', 'Weight', 'Duration', 'Heart_Rate','Body_Temp']))
     prediction=abs(prediction)
