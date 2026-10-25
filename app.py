@@ -18,6 +18,11 @@ from PIL import Image
 st.set_page_config(page_title="AIcaloriesBURN")
 #primaryColor="#F63366"
 #backgroundColor="#FFFFFF"
+st.warning(
+    "⚠️ Stima indicativa a scopo informativo e didattico. Il risultato è calcolato da un "
+    "modello statistico e può differire dal consumo reale. Non sostituisce il parere di un "
+    "medico o di un professionista dello sport."
+)
 model = pickle.load(open('streamlit.pk','rb'))
 @st.cache_data
 def predict(Gender, Age, Height, Weight, Duration, Heart_Rate,Body_Temp):
